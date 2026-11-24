@@ -1,0 +1,20 @@
+{
+  "name": "read-server-for-search-autocomplete-system",
+  "version": "1.0.0",
+  "description": "This application fetches terms.jsonl file from AWS S3 and builds a Trie using the terms in the fetched file to server suggestion terms provided a query string.",
+  "license": "ISC",
+  "author": "Akhilendra Ojha",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1167.0",
+    "@datastructures-js/priority-queue": "^6.4.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0"
+  }
+}
